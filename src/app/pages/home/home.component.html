@@ -1,0 +1,17 @@
+<!-- <p>home works!</p> -->
+
+<h3>{{nombre}}</h3>
+
+<button class="btn btn-primary" (click)="changeName()">
+    Cambiar Nombre
+</button>
+
+
+<!-- [nombreHijo]="nombre" / este codigo me permite asignarle el valor de la variable 
+padre {{nombre}} a mi variable hijo {{nombreHijo}} -->
+
+<!-- (cambioNommbreHijo)="nombre = $event" / este codigo permite que el padre reciba 
+    el valor de la variable hija cambioNombreHijo que envia y almacene en la variable
+    padre nombre -->
+<app-hijo [nombreHijo]="nombre" (cambioNombreHijo)="nombre = $event"></app-hijo> 
+
